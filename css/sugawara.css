@@ -1,1 +1,39 @@
 @charset "UTF-8";
+
+/*====================================================================
+slick
+====================================================================*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+
+.p-access-slider{
+width: 100%;
+}
+
+.p-access-slider .p-access-slide__in{
+  width: 100%;
+  width: 950px;
+  margin: 0 auto;
+}
+
+.p-access-slider .slick-slide{
+
+  
+}
+.p-access-slider .slick-slide figure{
+  display: block;
+  margin: 0 10px;
+
+}
+.p-access-slider .slick-slide img{
+  display: block;
+  object-fit: cover;
+  height: 200px;  border-radius: 10px;
+}
