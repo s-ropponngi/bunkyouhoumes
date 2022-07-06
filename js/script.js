@@ -44,4 +44,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+  //slick
+  $(document).on('ready', function() {
+    $(".regular").slick({
+      autoplay: true,
+      autoplaySpeed: 4000,
+      dots: true,
+    });
+  });
+
 });
