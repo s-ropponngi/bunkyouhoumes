@@ -4,17 +4,73 @@
   font-family: 'Murecho', sans-serif;
 }
 
-.c-info-card__btn{
-  font-size: ;
-  width: ;
-}
-
-.p-btn{
-  font-size: ;
-  width: ;
-}
-
 .c-btn{
-  color: ;
-  border-radius: ;
+  color: #fff;
+  background-color: #eb6100;
+  font-size: 1.6rem;
+  border-radius: 20vh;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+}
+
+.p-news__brock-list {
+  color: #000;
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+}
+
+.p-news__brock-item {
+  display: flex;
+  border-bottom: 1px solid #143423;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #CCC;
+  padding: 10px 20px;
+}
+
+.p-news__brock-date {
+  min-width: 100px;
+  font-size: 16px;
+}
+
+.p-news__brock-img {
+  background-image: url(../images/Bunkyo-Holmes/tuika/news.png);
+  background-position: center top;
+  width: 16px;
+  height: 16px;
+  margin: 5px 0 ;
+}
+
+.c-news {
+  padding: 0 20px ;
+}
+
+.c-msg {
+  display: flex;
+}
+.c-msg__text {
+  width: 50vh;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  padding: 70px 14px;
+  border-radius: 36% 65% 62% 35% / 52% 40% 54% 33% ;
+  background-color: #66CDAA
+}
+
+.c-msg__img {
+  max-width: 100%;
+  width: 30vh;
+  border-radius: 30% 70% 70% 30% / 30% 34% 66% 70% ;
+}
+
+.p-news__btn {
+  padding: 35px 0 ;
 }
