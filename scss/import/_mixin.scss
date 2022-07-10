@@ -1,0 +1,134 @@
+// @media query
+@mixin mq($breakpoint: pc) {
+  @if $breakpoint==sp {
+    @media screen and (max-width: 767px) {
+      // @media screen and (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint==pc {
+
+    @media print,
+    screen and (min-width: 768px) {
+      // @media print, screen and (min-width: 992px) {
+      @content;
+    }
+  }
+}
+
+@mixin max-screen($breakPoint) {
+
+  @media print,
+  screen and (max-width: $breakPoint + px) {
+    @content;
+  }
+}
+
+@mixin min-screen($breakPoint) {
+
+  @media print,
+  screen and (min-width: $breakPoint + px) {
+    @content;
+  }
+}
+
+@mixin screen($breakPoint_min, $breakPoint_max) {
+
+  @media print,
+  screen and (min-width: $breakPoint_min + px) and (max-width: $breakPoint_max + px) {
+    @content;
+  }
+}
+
+// Font
+@mixin font-size($size: 16) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+// Container
+@mixin container-pc($width: 950, $pw: 25) {
+
+  // width = 1100 + 60 * 2
+  @include mq(pc) {
+    // max-width: $width + px;
+    width: calc(#{$width}px + #{$pw * 2}px);
+    max-width: 100%;
+    // margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $pw + px;
+    padding-right: $pw + px;
+  }
+}
+
+@mixin container-sp($pd: 25) {
+  @include mq(sp) {
+    max-width: 100%;
+    // margin: 0 auto;
+    padding-left: $pd + px;
+    padding-right: $pd + px;
+  }
+}
+
+
+@mixin col-wrap($col: 3, $mw: 10, $mb: 10, $target: ">*") {
+  // 列数／横マージン／マージンボトム／子の要素
+  display: flex;
+  width: auto;
+  margin: 0 -#{$mw}px -#{$mb}px;
+
+  #{$target} {
+    margin-left: #{$mw}px;
+    margin-right: #{$mw}px;
+    margin-bottom: #{$mb}px;
+  }
+
+  // margin-bottom: calc((1 - #{$lh}) * 0.5em);
+
+
+  @for $i from 1 through 10 {
+    @if $col==$i {
+      #{$target} {
+        width: calc(100% - (#{$mw}px * 2));
+      }
+    }
+  }
+
+  // @if $col==1 {
+  //   #{$target} {
+  //     width: calc(100% - (#{$mw}px * 2));
+  //   }
+  // }
+
+  // @if $col==2 {
+  //   #{$target} {
+  //     width: calc(50% - (#{$mw}px * 2));
+  //   }
+  // }
+
+  // @if $col==3 {
+  //   #{$target} {
+  //     width: calc(33.333% - (#{$mw}px * 2));
+  //   }
+  // }
+
+  // @if $col==4 {
+  //   #{$target} {
+  //     width: calc(25% - (#{$mw}px * 2));
+  //   }
+  // }
+
+  // @if $col==5 {
+  //   #{$target} {
+  //     width: calc(20% - (#{$mw}px * 2));
+  //   }
+  // }
+
+  // @if $col==6 {
+  //   #{$target} {
+  //     width: calc(16.666% - (#{$mw}px * 2));
+  //   }
+  // }
+}

@@ -1,0 +1,61 @@
+@import './import/variable';
+@import './import/mixin';
+
+@import './foundation/base';
+@import './foundation/animation';
+
+@import './utility/margin';
+
+@import './component/balloon';
+
+@import './layout/main';
+
+@import './project/slider';
+@import './project/access';
+
+
+// @charset "UTF-8";
+
+// /* ====================
+// ホバー拡大
+// =======================*/
+
+// .p-zoom {
+//   display: flex;
+//   width: 100%;
+//   width: 500px;
+//   height: auto;
+//   margin: auto;
+//   padding-top: 50px;
+
+//   /* マージンorパディング */
+
+//   img {
+//     flex-wrap: wrap;
+//   }
+// }
+
+// .zoom img:hover {
+//   display: block;
+//   transform: scale(1.2, 1.2);
+// }
+
+// .p-zoom :hover {
+//   transform: scale(1.2, 1.2);
+// }
+
+// .p-zoom-house {
+//   clip-path: polygon(50% 0%, 100% 50%, 80% 50%, 80% 100%, 20% 100%, 20% 50%, 0 50%);
+// }
+
+// .p-zoom-circle {
+//   top: 100px;
+//   clip-path: circle(40% at 50% 50%);
+// }
+
+// .p-zoom-star {
+//   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+// }
+
+
+// /* 三角アイコン */

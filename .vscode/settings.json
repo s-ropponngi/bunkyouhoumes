@@ -1,0 +1,50 @@
+{
+	"files.autoGuessEncoding": false,
+	"files.encoding": "utf8",
+	// "liveServer.settings.root": "/dist",
+	// live sass compile
+	// "liveSassCompile.settings.generateMap": false,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/*dropbox*": true,
+		"**/.history": true,
+		"**/*.rar": true,
+		"**/*.tar": true,
+		"dist": true
+	},
+	"liveSassCompile.settings.includeItems": ["scss/*.scss"],
+	"liveSassCompile.settings.excludeList": [
+		"**/node_modules/**",
+		"**/.vscode/**",
+		"**/vendor/**",
+		"**/_bk*/**",
+		"**/*コピー*/**",
+		"**/*競合*/**",
+		"**/.history/**",
+		"*dropbox*",
+		"dist/"
+	],
+	"liveSassCompile.settings.autoprefix": [
+		"> 1%",
+		"last 2 versions",
+		"Firefox ESR",
+		"ie 8",
+		"ie 9",
+		"ie 10",
+		"ie 11"
+	],
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded", // expanded , nested, compressed ,
+			"extensionName": ".css",
+			"savePath": "~/../css"
+		}
+	],
+	"liveSassCompile.settings.generateMap": false,
+	"markdown.styles": ["https://demo.act3inc.com/_markdown/css/style.css"],
+	"markdown.preview.breaks": true
+}

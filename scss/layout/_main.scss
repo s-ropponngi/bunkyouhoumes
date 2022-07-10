@@ -1,0 +1,16 @@
+.l-container {
+  @include container-pc();
+  // $garter: 25px;
+  // box-sizing: border-box;
+  // width: calc(950px + (#{$garter}*2));
+  // max-width: 100%;
+  // margin-left: auto;
+  // margin-right: auto;
+  // padding-left: $garter;
+  // padding-right: $garter;
+}
+
+.l-container-narrow {}
+
+.l-container-wide {}
+

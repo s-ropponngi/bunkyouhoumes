@@ -1,0 +1,46 @@
+/* ====================
+アクセス案内
+======================*/
+
+.p-access-guide {
+    @include container-pc();
+    @include container-sp();
+    // width: 100%;
+    // width: 300px;
+
+    /* width: calc(); */
+    // height: auto;
+    padding-top: 50px;
+
+    @include mq(pc) {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    &__item {
+        @include mq(pc) {
+            width: calc(50% - 25px);
+        }
+    }
+}
+
+.p-access-guide__title {
+    /* top: 50px; */
+    color: #FF8043;
+}
+
+.p-access-map {
+    @include container-pc();
+
+    iframe {
+        width: 100%;
+        height: 320px;
+
+        @include mq(pc) {
+            height: 520px;
+        }
+    }
+}
+
+

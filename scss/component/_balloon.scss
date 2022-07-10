@@ -1,0 +1,40 @@
+/* =====================
+吹き出し
+=======================*/
+/* 本体 */
+
+.c-balloon {
+  width: 300px;
+
+  /* width: calc(); */
+  margin: auto;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  background-color: #66CDAA;
+
+  /* margin-right: 1050px; */
+  // top: 50px;
+
+  .icon {
+    position: absolute;
+    right: -150px;
+    top: 0;
+  }
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    right: -10px;
+    top: 30px;
+    border-left: 10px solid #66CDAA;
+    border-top: 5px solid transparent;
+  }
+}
+
+/* 画像 - 絶対配置で右上に配置 */
