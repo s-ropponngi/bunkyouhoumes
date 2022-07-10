@@ -56,23 +56,21 @@
   display: block;
 }
 
-.p-work__btn-img {
-  width: 100px;
-}
-
 .p-work__btn-center {
   position: relative;
-  top: 0px;
-  left: 0px;
+  z-index: 1;
+  width: 350px;
+  top: 110px;
+  left: 50px;
 }
 
 .p-work__brock {
   display: grid;
-  grid-template-columns: 50px 50px 50px;
-  grid-template-rows: 50px 50px 50px;
-  position: absolute;
-  max-width: 50%;
-  top: 0px;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 90px 90px 90px;
+  position: relative;
+  z-index: 2;
+  bottom: 120px;
 }
 
 .p-work__btn-top {
