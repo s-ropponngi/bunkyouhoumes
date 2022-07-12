@@ -1,19 +1,20 @@
 /* =====================
 吹き出し
 =======================*/
+
 /* 本体 */
-
 .c-balloon {
-  width: 300px;
-  top: 30px;
-  /* width: calc(); */
-  margin: auto;
-  position: relative;
-  padding: 20px;
-  border-radius: 10px;
-  color: black;
-  background-color: #66CDAA;
 
+    width: 300px;
+    top: 30px;
+    // margin: auto;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    color: #143423;
+    ;
+    background-color: #66CDAA;
+  }
 
   .icon {
     position: absolute;
@@ -33,6 +34,3 @@
     border-left: 10px solid #66CDAA;
     border-top: 5px solid transparent;
   }
-}
-
-/* 画像 - 絶対配置で右上に配置 */

@@ -10,88 +10,78 @@ body {
           box-sizing: border-box;
 }
 
-
-
-
-.heading03 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 26px;
-	text-align: center;
-  color: #143423;
-}
-
-.heading02 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 26px;
-	text-align: center;
-  color: #143423;
-}
-
-.heading02::before,
-.heading02::after {
-	content: '';
-	width: 70px;
-	height: 3px;
-	background-color: #143423;
-  
-}
-
-.heading02::before {
-	margin-right: 20px;
-}
-.heading02::after {
-	margin-left: 20px;
-}
-
-
-
-
-
 a {
   background-color: #fff;
 }
 
-.slide-in-right {
-  opacity: 0;
-}
-
+/*==========
+フェードイン
+==========*/
 .p-about-vision {
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   color: #143423;
-}
-
-@media print, screen and (min-width: 768px) {
-  .p-about-vision {
-    width: calc(950px + 50px);
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .p-about-vision {
-    max-width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+  width: auto;
+  height: auto;
+  font-size: 22px;
+  /*フェードイン指定*/
+  /*遅延指定*/
 }
 
 .p-about-vision .p-about-vision__title {
+  border-bottom: 1px solid;
+  width: 200px;
+  margin-left: auto;
+  /* 中央寄せ */
+  margin-right: auto;
+  /* 中央寄せ */
   font-size: 28px;
-  border-bottom-style: solid;
-  border-width: thin;
-  max-width: 950px;
 }
 
 .p-about-vision .p-about-vision__text {
-  font-size: 22px;
   padding-top: 20px;
+}
+
+.p-about-vision .fadein {
+  opacity: 0;
+  -webkit-animation: fadein 6s ease forwards;
+          animation: fadein 6s ease forwards;
+  font-size: 22px;
+  line-height: 3em;
+}
+
+@-webkit-keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+.p-about-vision .txt01 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.p-about-vision .txt02 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.p-about-vision .txt03 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .u-mb-0 {
@@ -1524,16 +1514,17 @@ a {
 吹き出し
 =======================*/
 /* 本体 */
-.c-balloon {
-  width: 300px;
-  top: 30px;
-  /* width: calc(); */
-  margin: auto;
-  position: relative;
-  padding: 20px;
-  border-radius: 10px;
-  color: black;
-  background-color: #66CDAA;
+@media print, screen and (min-width: 768px) {
+  .c-balloon {
+    width: calc(50% - 25px);
+    width: 300px;
+    top: 30px;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    color: #143423;
+    background-color: #66CDAA;
+  }
 }
 
 .c-balloon .icon {
@@ -1554,7 +1545,6 @@ a {
   border-top: 5px solid transparent;
 }
 
-/* 画像 - 絶対配置で右上に配置 */
 @media print, screen and (min-width: 768px) {
   .l-container {
     width: calc(950px + 50px);
@@ -1754,4 +1744,75 @@ slick　アクセススライダー
   .p-access-map iframe {
     height: 520px;
   }
+}
+
+/*==========
+test
+==========*/
+@media print, screen and (min-width: 768px) {
+  .c-blog1 {
+    width: calc(950px + 50px);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-blog1 {
+    max-width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.c-blog1-title {
+  color: white;
+  font-size: 28px;
+  padding: 1.65rem 2rem;
+  background-color: #143423;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(165, 210, 255, 0.3)), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(165, 210, 255, 0.3)), color-stop(50%, transparent));
+  background-image: linear-gradient(90deg, rgba(165, 210, 255, 0.3) 50%, transparent 50%), linear-gradient(rgba(165, 210, 255, 0.3) 50%, transparent 50%);
+  background-size: 40px 40px;
+  max-width: 725px;
+}
+
+/*==========
+ブログ
+==========*/
+.c-blog {
+  width: calc(50% - 25px);
+}
+
+@media print, screen and (min-width: 768px) {
+  .c-blog {
+    width: calc(950px + 50px);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-blog {
+    max-width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.c-blog .c-blog-title {
+  color: #143423;
+  font-size: 28px;
+  padding: 1.65rem 2rem;
+  background-color: mediumaquamarine;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(165, 210, 255, 0.3)), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(165, 210, 255, 0.3)), color-stop(50%, transparent));
+  background-image: linear-gradient(90deg, rgba(165, 210, 255, 0.3) 50%, transparent 50%), linear-gradient(rgba(165, 210, 255, 0.3) 50%, transparent 50%);
+  background-size: 40px 40px;
+  max-width: 700px;
+  width: calc(40% - 25px);
 }
