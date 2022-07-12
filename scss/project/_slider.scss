@@ -1,6 +1,4 @@
-/* ===================
-事業内容
-=====================*/
+
 
 /* ====================
 物件スライダー
@@ -10,28 +8,21 @@
 
   .slick-prev,
   .slick-next {
-    width: 40px;
+    width: 80px;
     height: 51px;
 
     &:before {
       display: block;
       content: "";
-      background-image: url("../images/Bunkyo-Holmes/access/arrow-l.png");
       background-repeat: no-repeat;
       background-position: center;
       width: 100%;
       height: 100%;
-      // color: black;
-      // font-family: 'slick';
-      // font-size: 20px;
-      // line-height: 1;
-      // opacity: .75;
-      // -webkit-font-smoothing: antialiased;
     }
   }
 
   .slick-prev {
-    left: -40px;
+    left: -30px;
 
     &:before {
       background-image: url("../images/Bunkyo-Holmes/access/arrow-l.png");
@@ -39,7 +30,7 @@
   }
 
   .slick-next {
-    right: -40px;
+    right: -30px;
 
     &:before {
       background-image: url("../images/Bunkyo-Holmes/access/arrow-r.png");
@@ -70,6 +61,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #143423;
+      font-family: 'Murecho';
+      font-size: 22px;
+      font-weight: bold;
     }
   }
 }

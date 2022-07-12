@@ -5,28 +5,25 @@
 .p-access-guide {
     @include container-pc();
     @include container-sp();
-    // width: 100%;
-    // width: 300px;
 
-    /* width: calc(); */
-    // height: auto;
-    padding-top: 50px;
+   
 
     @include mq(pc) {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
+        padding-top: 30px;
     }
 
     &__item {
         @include mq(pc) {
             width: calc(50% - 25px);
+            font-size: 22px;
         }
     }
 }
 
 .p-access-guide__title {
-    /* top: 50px; */
     color: #FF8043;
 }
 

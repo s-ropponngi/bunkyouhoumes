@@ -10,12 +10,88 @@ body {
           box-sizing: border-box;
 }
 
+
+
+
+.heading03 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	text-align: center;
+  color: #143423;
+}
+
+.heading02 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	text-align: center;
+  color: #143423;
+}
+
+.heading02::before,
+.heading02::after {
+	content: '';
+	width: 70px;
+	height: 3px;
+	background-color: #143423;
+  
+}
+
+.heading02::before {
+	margin-right: 20px;
+}
+.heading02::after {
+	margin-left: 20px;
+}
+
+
+
+
+
 a {
   background-color: #fff;
 }
 
 .slide-in-right {
   opacity: 0;
+}
+
+.p-about-vision {
+  color: #143423;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-about-vision {
+    width: calc(950px + 50px);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-about-vision {
+    max-width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.p-about-vision .p-about-vision__title {
+  font-size: 28px;
+  border-bottom-style: solid;
+  border-width: thin;
+  max-width: 950px;
+}
+
+.p-about-vision .p-about-vision__text {
+  font-size: 22px;
+  padding-top: 20px;
 }
 
 .u-mb-0 {
@@ -1450,6 +1526,7 @@ a {
 /* 本体 */
 .c-balloon {
   width: 300px;
+  top: 30px;
   /* width: calc(); */
   margin: auto;
   position: relative;
@@ -1457,7 +1534,6 @@ a {
   border-radius: 10px;
   color: black;
   background-color: #66CDAA;
-  /* margin-right: 1050px; */
 }
 
 .c-balloon .icon {
@@ -1490,15 +1566,12 @@ a {
   }
 }
 
-/* ===================
-事業内容
-=====================*/
 /* ====================
 物件スライダー
 ======================*/
 .p-info-slider .slick-prev,
 .p-info-slider .slick-next {
-  width: 40px;
+  width: 80px;
   height: 51px;
 }
 
@@ -1506,7 +1579,6 @@ a {
 .p-info-slider .slick-next:before {
   display: block;
   content: "";
-  background-image: url("../images/Bunkyo-Holmes/access/arrow-l.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -1514,7 +1586,7 @@ a {
 }
 
 .p-info-slider .slick-prev {
-  left: -40px;
+  left: -30px;
 }
 
 .p-info-slider .slick-prev:before {
@@ -1522,7 +1594,7 @@ a {
 }
 
 .p-info-slider .slick-next {
-  right: -40px;
+  right: -30px;
 }
 
 .p-info-slider .slick-next:before {
@@ -1561,6 +1633,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #143423;
+  font-family: 'Murecho';
+  font-size: 22px;
+  font-weight: bold;
 }
 
 /* ===================
@@ -1613,11 +1689,6 @@ slick　アクセススライダー
 /* ====================
 アクセス案内
 ======================*/
-.p-access-guide {
-  /* width: calc(); */
-  padding-top: 50px;
-}
-
 @media print, screen and (min-width: 768px) {
   .p-access-guide {
     width: calc(950px + 50px);
@@ -1648,17 +1719,18 @@ slick　アクセススライダー
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    padding-top: 30px;
   }
 }
 
 @media print, screen and (min-width: 768px) {
   .p-access-guide__item {
     width: calc(50% - 25px);
+    font-size: 22px;
   }
 }
 
 .p-access-guide__title {
-  /* top: 50px; */
   color: #FF8043;
 }
 

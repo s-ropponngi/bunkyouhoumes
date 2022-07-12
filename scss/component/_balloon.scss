@@ -5,7 +5,7 @@
 
 .c-balloon {
   width: 300px;
-
+  top: 30px;
   /* width: calc(); */
   margin: auto;
   position: relative;
@@ -14,8 +14,6 @@
   color: black;
   background-color: #66CDAA;
 
-  /* margin-right: 1050px; */
-  // top: 50px;
 
   .icon {
     position: absolute;

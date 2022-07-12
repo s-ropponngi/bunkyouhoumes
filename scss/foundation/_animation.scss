@@ -1,4 +1,29 @@
 // アニメーション スライドイン
 .slide-in-right {
   opacity: 0;
+
+}
+
+
+.p-about-vision {
+  @include container-pc();
+  @include container-sp();
+  color: #143423;
+
+
+
+.p-about-vision__title{
+  font-size: 28px;
+  border-bottom-style: solid;
+  border-width: thin;
+  max-width: 950px;
+}
+
+
+.p-about-vision__text {
+//  border-bottom-style: solid;
+  font-size: 22px;
+  padding-top: 20px;
+}
+
 }

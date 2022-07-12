@@ -9,7 +9,7 @@ $('.p-info-slider__in').slick({
   // infinite: true, //スライドのループ
   // pauseOnHover: false, //ホバーしたときにスライドを一時停止しない
   // fade: true,
-  slidesToShow: 4,
+  slidesToShow: 3,
   // centerMode: true,
   variablewidth: true
 });
