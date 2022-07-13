@@ -1,4 +1,16 @@
 @charset "UTF-8";
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
 
 .c-titles__title{
   font-family: 'Murecho', sans-serif;
@@ -15,6 +27,9 @@
   position: relative;
   display: inline-block;
   padding: 1rem 4rem;
+  width: 100%;
+  display: block;
+  margin: 0 300px;
 }
 
 .p-news__brock-list {
@@ -22,6 +37,40 @@
   list-style: none outside;
   margin: 0;
   padding: 0;
+}
+
+.c-section-title__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  text-align: center;
+  color: #143423;
+}
+
+.c-section-title__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  text-align: center;
+  color: #143423;
+}
+
+.c-section-title__bottom::before ,
+.c-section-title__bottom::after {
+  content: '';
+  width: 70px;
+  height: 3px;
+  background-color: #143423;
+}
+
+.c-section-title__bottom::before {
+  margin-right: 20px;
+}
+
+.c-section-title__bottom::after {
+  margin-left: 20px;
 }
 
 .p-news__brock-item {
@@ -52,45 +101,72 @@
   padding: 0 20px ;
 }
 
+
+
+/* スマホ版事業案内 */
+.p-work__text {
+  text-align: center;
+  font-size: 22px;
+  color: #143423;
+  padding: 40px;
+}
+.p-work__top {
+  display: inline-flex
+}
+
+.p-work__bottom {
+  display: flex;
+}
+
 .p-work {
-  display: block;
+  display: none;
 }
 
-.p-work__btn-center {
-  position: relative;
-  z-index: 1;
-  width: 350px;
-  top: 110px;
-  left: 50px;
-}
+@media screen and (min-width: 768px) {
+  .p-work__sp {
+    display: none;
+  }
 
-.p-work__brock {
-  display: grid;
-  grid-template-columns: 150px 150px 150px;
-  grid-template-rows: 90px 90px 90px;
-  position: relative;
-  z-index: 2;
-  bottom: 120px;
-}
-
-.p-work__btn-top {
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
-}
-
-.p-work__btn-left {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-}
-
-.p-work__btn-right {
-  grid-row: 2 / 3;
-  grid-column: 3 / 4;
-}
-
-.p-work__btn-under {
-  grid-row: 3 / 4;
-  grid-column: 2 / 3;
+  .p-work {
+    display: block;
+  }
+  
+  .p-work__btn-center {
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    top: 110px;
+    left: 50px;
+  }
+  
+  .p-work__brock {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 90px 90px 90px;
+    position: relative;
+    z-index: 2;
+    bottom: 120px;
+  }
+  
+  .p-work__btn-top {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  
+  .p-work__btn-left {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  
+  .p-work__btn-right {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+  }
+  
+  .p-work__btn-under {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
 }
 
 
