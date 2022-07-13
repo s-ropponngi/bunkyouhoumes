@@ -21,11 +21,11 @@ a {
   width: 100%;
   height: 100%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   color: #143423;
   width: auto;
@@ -36,7 +36,7 @@ a {
 }
 
 .p-about-vision .p-about-vision__title {
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   width: 200px;
   margin-left: auto;
   /* 中央寄せ */
@@ -52,36 +52,9 @@ a {
 .p-about-vision .fadein {
   opacity: 0;
   -webkit-animation: fadein 6s ease forwards;
-          animation: fadein 6s ease forwards;
+  animation: fadein 6s ease forwards;
   font-size: 22px;
   line-height: 3em;
-}
-
-@-webkit-keyframes fadein {
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  100% {
-    opacity: 1;
-  }
-}
-
-.p-about-vision .txt01 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.p-about-vision .txt02 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
-.p-about-vision .txt03 {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
 }
 
 .u-mb-0 {
@@ -1514,35 +1487,35 @@ a {
 吹き出し
 =======================*/
 /* 本体 */
-@media print, screen and (min-width: 768px) {
-  .c-balloon {
-    width: calc(50% - 25px);
-    width: 300px;
-    top: 30px;
-    position: relative;
-    padding: 20px;
-    border-radius: 10px;
-    color: #143423;
-    background-color: #66CDAA;
-  }
+.c-balloon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.c-balloon .icon {
-  position: absolute;
-  right: -150px;
-  top: 0;
+.c-balloon-wrapper .c-balloon {
+  width: 300px;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  color: #143423;
+  background-color: #66CDAA;
 }
 
-.c-balloon::before {
+.c-balloon-wrapper .c-balloon::before {
   content: '';
   position: absolute;
   display: block;
   width: 0;
   height: 0;
   right: -10px;
-  top: 30px;
+  top: 40px;
   border-left: 10px solid #66CDAA;
   border-top: 5px solid transparent;
+}
+
+.c-balloon-wrapper .icon {
+  width: 300px;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -1747,72 +1720,19 @@ slick　アクセススライダー
 }
 
 /*==========
-test
-==========*/
-@media print, screen and (min-width: 768px) {
-  .c-blog1 {
-    width: calc(950px + 50px);
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .c-blog1 {
-    max-width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-
-.c-blog1-title {
-  color: white;
-  font-size: 28px;
-  padding: 1.65rem 2rem;
-  background-color: #143423;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(165, 210, 255, 0.3)), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(165, 210, 255, 0.3)), color-stop(50%, transparent));
-  background-image: linear-gradient(90deg, rgba(165, 210, 255, 0.3) 50%, transparent 50%), linear-gradient(rgba(165, 210, 255, 0.3) 50%, transparent 50%);
-  background-size: 40px 40px;
-  max-width: 725px;
-}
-
-/*==========
 ブログ
 ==========*/
-.c-blog {
-  width: calc(50% - 25px);
-}
-
-@media print, screen and (min-width: 768px) {
-  .c-blog {
-    width: calc(950px + 50px);
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .c-blog {
-    max-width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-
 .c-blog .c-blog-title {
   color: #143423;
   font-size: 28px;
+  max-width: 700px;
   padding: 1.65rem 2rem;
   background-color: mediumaquamarine;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(165, 210, 255, 0.3)), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(165, 210, 255, 0.3)), color-stop(50%, transparent));
   background-image: linear-gradient(90deg, rgba(165, 210, 255, 0.3) 50%, transparent 50%), linear-gradient(rgba(165, 210, 255, 0.3) 50%, transparent 50%);
   background-size: 40px 40px;
+}
+
+.c-blog .c-blog-text {
   max-width: 700px;
-  width: calc(40% - 25px);
 }
