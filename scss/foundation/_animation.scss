@@ -1,42 +1,48 @@
 /*==========
 フェードイン
 ==========*/
+
+
 .p-about-vision {
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  @include container-pc();
+  @include container-sp();
+}
+.p-about-vision{
+  width:100%;
+  height:100%;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #143423;
-  width: auto;
+  width:auto;
   height: auto;
+
   font-size: 22px;
-  /*フェードイン指定*/
-  /*遅延指定*/
 }
 
-.p-about-vision .p-about-vision__title {
-  border-bottom: 2px solid;
-  width: 200px;
-  margin-left: auto;
-  /* 中央寄せ */
-  margin-right: auto;
-  /* 中央寄せ */
+.p-about-vision__title{
+	width: 200px;
+	margin-left: auto; /* 中央寄せ */
+	margin-right: auto; /* 中央寄せ */
   font-size: 28px;
+  border-bottom-style: solid;
+  border-width: thin;
+  max-width: 950px;
 }
 
-.p-about-vision .p-about-vision__text {
-  padding-top: 20px;
-}
-
-.p-about-vision .fadein {
+/*フェードイン指定*/
+.fadein {
   opacity: 0;
-  -webkit-animation: fadein 6s ease forwards;
-          animation: fadein 6s ease forwards;
+  animation: fadein 6s ease forwards;
   font-size: 22px;
   line-height: 3em;
 }
+
+@keyframes fadein {
+  100% {  opacity: 1;}
+}
+
+/*遅延指定*/
+.txt01 {animation-delay: 1s;}
+.txt02 {animation-delay: 3s;}
+.txt03 {animation-delay: 5s;}

@@ -7,7 +7,7 @@
     display: flex;
   .c-balloon {
     width: 300px;
-    // top: 30px;
+    height: 130px;
     position: relative;
     padding: 20px;
     border-radius: 10px;
@@ -25,7 +25,5 @@
         border-top: 5px solid transparent;
     }
   }
-  .icon {
-    width: 300px;
-  }
+
 }

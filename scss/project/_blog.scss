@@ -8,8 +8,6 @@
   // @include container-sp();
   // width: calc(40% - 25px);
 
-
-
   .c-blog-title {
     color: #143423;
     font-size: 28px;
@@ -20,10 +18,10 @@
       linear-gradient(90deg, rgba(165, 210, 255, .3) 50%, transparent 50%),
       linear-gradient(rgba(165, 210, 255, .3) 50%, transparent 50%);
     background-size: 40px 40px;
-
   }
 
   .c-blog-text {
     max-width: 700px;
   }
 }
+
