@@ -1,0 +1,7 @@
+.c-section-title {
+    margin-bottom: 20px;
+
+    @include mq(pc) {
+        margin-bottom: 40px;
+    }
+}

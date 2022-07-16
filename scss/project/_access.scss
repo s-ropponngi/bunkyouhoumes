@@ -3,29 +3,49 @@
 ======================*/
 
 .p-access-guide {
-    @include container-pc();
-    @include container-sp();
+    // @include container-pc();
+    // @include container-sp();
 
-   
 
-    @include mq(pc) {
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
-        padding-top: 30px;
+
+    &__in {
+        @include mq(pc) {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+        }
     }
 
     &__item {
+        @include mq(sp) {
+            margin-bottom: 20px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
         @include mq(pc) {
             width: calc(50% - 25px);
-            font-size: 22px;
+            // font-size: 22px;
         }
+    }
+
+    &__img {
+        margin-bottom: 8px;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__title {
+        color: #FF8043;
+        margin-bottom: 10px;
     }
 }
 
-.p-access-guide__title {
-    color: #FF8043;
-}
+
 
 .p-access-map {
     @include container-pc();
@@ -41,3 +61,12 @@
 }
 
 
+.c-msg--access {
+    justify-content: center;
+
+    .c-msg__text {
+        @include mq(pc) {
+            width: 520px;
+        }
+    }
+}

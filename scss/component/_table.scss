@@ -1,0 +1,49 @@
+.c-table-underbar {
+    &__row {
+        border-bottom: 1px solid #143423;
+
+        @include mq(sp) {
+            padding: 12px 10px;
+        }
+
+        @include mq(pc) {
+            display: flex;
+
+        }
+    }
+
+    &__title,
+    &__body {
+
+
+        @include mq(pc) {
+            padding: 14px 10px;
+        }
+    }
+
+    &__title {
+        // font-size: 22px;
+        font-weight: bold;
+        color: #143423;
+        width: 100%;
+
+        @include mq(sp) {
+            margin-bottom: 6px;
+
+        }
+
+        @include mq(pc) {
+            width: 120px;
+            margin-right: 20px;
+        }
+    }
+
+    &__body {
+        // font-size: 22px;
+        width: 100%;
+
+        @include mq(pc) {
+            width: calc(100% - 120px - 20px);
+        }
+    }
+}

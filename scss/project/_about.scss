@@ -1,0 +1,93 @@
+.p-about-vision {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #143423;
+
+    &__title {
+        // width: 200px;
+        margin-left: auto;
+        /* 中央寄せ */
+        margin-right: auto;
+        /* 中央寄せ */
+        // border-bottom: 1px solid #143423;
+        // border-width: thin;
+        // position: relative;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 8px;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 200px;
+            height: 1px;
+            background-color: #143423;
+            margin: 0 auto;
+            margin-top: 8px;
+        }
+
+    }
+
+    &__text {
+        margin-bottom: 20px;
+
+        @include mq(pc) {
+            // margin-bottom: 40px;
+        }
+    }
+
+    &__copy {
+        margin-bottom: 20px;
+
+        .txt {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 1.5em;
+            margin-bottom: 14px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+.p-about-msg {
+    margin-bottom: 40px;
+
+    @include mq(pc) {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+.p-about-prof {
+    @include mq(pc) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__detail {
+
+        @include mq(sp) {
+            margin-bottom: 60px;
+        }
+
+        @include mq(pc) {
+
+            margin-right: 40px;
+            width: calc(100% - 270px - 40px);
+        }
+    }
+
+    &__img {
+        @include mq(pc) {
+            width: 270px;
+        }
+    }
+}

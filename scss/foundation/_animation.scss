@@ -2,47 +2,27 @@
 フェードイン
 ==========*/
 
+// /*フェードイン指定*/
+// .fadein {
+//   opacity: 0;
+//   animation: fadein 1.2s ease forwards;
+// }
 
-.p-about-vision {
-  @include container-pc();
-  @include container-sp();
-}
-.p-about-vision{
-  width:100%;
-  height:100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #143423;
-  width:auto;
-  height: auto;
+// @keyframes fadein {
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
-  font-size: 22px;
-}
+// /*遅延指定*/
+// .txt01 {
+//   animation-delay: 0s;
+// }
 
-.p-about-vision__title{
-	width: 200px;
-	margin-left: auto; /* 中央寄せ */
-	margin-right: auto; /* 中央寄せ */
-  font-size: 28px;
-  border-bottom-style: solid;
-  border-width: thin;
-  max-width: 950px;
-}
+// .txt02 {
+//   animation-delay: 0.5s;
+// }
 
-/*フェードイン指定*/
-.fadein {
-  opacity: 0;
-  animation: fadein 6s ease forwards;
-  font-size: 22px;
-  line-height: 3em;
-}
-
-@keyframes fadein {
-  100% {  opacity: 1;}
-}
-
-/*遅延指定*/
-.txt01 {animation-delay: 1s;}
-.txt02 {animation-delay: 3s;}
-.txt03 {animation-delay: 5s;}
+// .txt03 {
+//   animation-delay: 1s;
+// }

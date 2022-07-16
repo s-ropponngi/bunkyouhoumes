@@ -1,5 +1,12 @@
 .l-container {
   @include container-pc();
+  @include container-sp();
+  margin-bottom: 50px;
+
+  @include mq(pc) {
+    margin-bottom: 80px;
+  }
+
   // $garter: 25px;
   // box-sizing: border-box;
   // width: calc(950px + (#{$garter}*2));
@@ -10,7 +17,14 @@
   // padding-right: $garter;
 }
 
-.l-container-narrow {}
+.l-container-narrow {
+  @include container-pc(800);
+  @include container-sp();
+  margin-bottom: 50px;
+
+  @include mq(pc) {
+    margin-bottom: 80px;
+  }
+}
 
 .l-container-wide {}
-
