@@ -78,8 +78,9 @@
       <br>
       地元での物件探しはお任せください。<br>
       資産活用・相続相談、賃貸住宅建設、管財業務に従事し、現在は家業の不動産業務に専念。<br>
+      相続・事業承継に成年後見・家族信託の手法によりアドバイスを行います。<br>
       <br>
-      お客様との出会いを何より大切にしています。まずはお気軽にご相談ください。
+      私達はお客様との出会いを何より大切にしています。まずはお気軽にご相談ください。
     </p>
 
     <div class="p-about-prof">
@@ -151,13 +152,13 @@
         </div>
         <div class="c-table-underbar__row">
           <div class="c-table-underbar__title">携帯電話</div>
-          <div class="c-table-underbar__body">０９０－５４９８－９２２５　担当:舩津(フナツ)</div>
+          <div class="c-table-underbar__body">０９０－５４９８－９２２５ 担当:舩津(フナツ)</div>
         </div>
         <div class="c-table-underbar__row">
           <div class="c-table-underbar__title">MAIL</div>
           <div class="c-table-underbar__body">
             <script type="text/javascript">
-              <!--
+
               function converter(M) {
                 var str = "",
                   str_as = "";
@@ -169,8 +170,7 @@
               }
               var ad = converter(String.fromCharCode(101, 116, 106, 106, 116, 109, 63, 105, 98, 110) + String.fromCharCode(108, 45, 103, 110, 108, 100, 45, 109, 100, 45, 105, 111));
               document.write(ad);
-              //
-              -->
+       
             </script>
             <noscript>Javascriptを有効にしてください</noscript>
 
@@ -178,9 +178,7 @@
         </div>
         <div class="c-table-underbar__row">
           <div class="c-table-underbar__title">事業内容</div>
-          <div class="c-table-underbar__body">不動産・法務コンサルティング・資産活用・相続相談
-            賃貸住宅建設・管財業務・相続・事業承継に成年後見
-            家族信託の手法によりアドバイス</div>
+          <div class="c-table-underbar__body">不動産・法務コンサルティング、不動産賃貸管理・売買仲介・空家管理、損害保険代理店</div>
         </div>
         <div class="c-table-underbar__row">
           <div class="c-table-underbar__title">免許番号</div>
