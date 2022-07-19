@@ -64,7 +64,7 @@
       <p class="fadein txt txt03">３．幸福度の追求</p>
     </div>
     <div class="p-about-vision__img">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/profile/ceo.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/profile/ceo.jpg" alt="代表の写真">
     </div>
   </section>
 
@@ -113,7 +113,7 @@
         </div>
       </div>
       <div class="p-about-prof__img">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/profile/ceo-2.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/profile/ceo-2.jpg" alt="代表の写真">
       </div>
     </div>
   </section>
@@ -157,8 +157,9 @@
         <div class="c-table-underbar__row">
           <div class="c-table-underbar__title">MAIL</div>
           <div class="c-table-underbar__body">
+          <!-- ボット対策 -->
             <script type="text/javascript">
-
+            
               function converter(M) {
                 var str = "",
                   str_as = "";

@@ -62,7 +62,7 @@
         <div class="p-access-guide__in">
             <div class="p-access-guide__item">
                 <figure class="p-access-guide__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/access/n-guide.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/access/s-office.png" alt="駐車場の写真">
                 </figure>
                 <div class="p-access-guide__title">南方面からお越しのお客様。
                 </div>
@@ -72,7 +72,7 @@
             </div>
             <div class="p-access-guide__item">
                 <figure class="p-access-guide__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/access/n-guide.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/access/n-office.png" alt="駐車場の写真">
                 </figure>
                 <div class="p-access-guide__title">北方面からお越しのお客様。
                 </div>
@@ -92,7 +92,7 @@
 
             <div class="p-access-guide__item">
                 <figure class="p-access-guide__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/access/Parking-1.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/access/Parking-1.png" alt="駐車場の写真">
                 </figure>
                 <div class="p-access-guide__text">
                     当社白の平家と2階建て貸家間の間が入り口です。
@@ -100,7 +100,7 @@
             </div>
             <div class="p-access-guide__item">
                 <figure class="p-access-guide__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/access/parking-2.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/access/parking-2.png" alt="駐車場の写真">
                 </figure>
                 <div class="p-access-guide__text">
                     奥に進むと当社お客様駐車場がございます。
@@ -117,7 +117,8 @@
                     お会い出来るのを楽しみにしています！</p>
             </div>
             <div class="c-msg__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/access/014.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Bunkyo-Holmes/access/014.jpg" alt="代表の
+            写真">
             </div>
         </div>
     </section>
